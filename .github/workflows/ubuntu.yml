@@ -36,7 +36,7 @@ jobs:
       run: wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip -O ngrok.zip && unzip ngrok.zip
     - name: Creating Tunnel
       env:
-       ngroktoken: ${{ secrets.NGROK_AUTH_TOKEN }}
+       ngroktoken: 1mSnVWlRxJrHjx4ikRlCGNmW8vz_6k81oojaCp3w9VQicmEVm
       run: |
            ./ngrok authtoken $ngroktoken
            ./ngrok tcp 3389
